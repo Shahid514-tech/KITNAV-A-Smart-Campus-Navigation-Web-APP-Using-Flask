@@ -1,0 +1,116 @@
+{% include 'admin-layout.html' %}
+
+        <!-- Begin Page Content -->
+        <div class="container">
+          <form id="optionForm" method="post">
+          <label for="Source">Choose a Source point : </label>
+          <select id="Source" name="source">
+            <option value="select">--Select an Option--</option>
+            <optgroup label="CSE(DS & AIML)">
+              <option value="CSDSCR-01">CSDSCR-01</option>
+              <option value="CSDSCR-02">CSDSCR-02</option>
+              <option value="CSAMCR-01">CSAMCR-01</option>
+              <option value="CSAMCR-02">CSAMCR-02</option>
+              <option value="CSAMCR-03">CSAMCR-03</option>
+              <option value="CSAMCR-04">CSAMCR-04</option>
+              <option value="LAB-01">LAB-01</option>
+              <option value="LAB-02">LAB-02</option>
+              <option value="LAB-03">LAB-03</option>
+              <option value="LAB-04">LAB-04</option>
+            </optgroup>
+          </select>
+          <br>
+          <br>
+          <br>
+          <label for="Destination">Choose a Destination point : </label>
+          <select id="Destination" name="destination">
+            <option value="select">--Select an Option--</option>
+            <optgroup label="CSE(DS & AIML)">
+              <option value="CSDSCR-01">CSDSCR-01</option>
+              <option value="CSDSCR-02">CSDSCR-02</option>
+              <option value="CSDSCR-02">CSDSCR-03</option>
+              <option value="CSAMCR-01">CSAMCR-01</option>
+              <option value="CSAMCR-02">CSAMCR-02</option>
+              <option value="CSAMCR-03">CSAMCR-03</option>
+              <option value="CSAMCR-04">CSAMCR-04</option>
+              <option value="LAB-01">LAB-01(MAC LAB)</option>
+              <option value="LAB-02">LAB-02</option>
+              <option value="LAB-03">LAB-03</option>
+              <option value="LAB-04">LAB-04</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="wrapper">
+          <button class="custom-button" onclick="submitForm(); active()">
+            <span>Submit</span>
+            <div class="success">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+        
+                <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </form>
+      <div id="viewer-container" style="width: 100%; height: 500px;">
+        <!-- The container for the viewer -->
+        <iframe id="viewer" frameborder="0" scrolling="yes" style="position: relative; width: 100%; height: 100%;"></iframe>
+      </div>
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="static/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="static/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="static/js/demo/chart-area-demo.js"></script>
+  <script src="static/js/demo/chart-pie-demo.js"></script>
+
+  <script src="static/js/submit.js"></script>
+  <script>
+    function active() {
+      var btn = document.querySelector(".custom-button");
+      btn.classList.add("is_active");
+  
+      // Revert back to the original state after 2000 milliseconds (adjust as needed)
+      setTimeout(function() {
+        btn.classList.remove("is_active");
+      }, 7200);
+    }
+  </script>
+  <script src="/static/js/history.js"></script>
+  
+</body>
+
+</html>

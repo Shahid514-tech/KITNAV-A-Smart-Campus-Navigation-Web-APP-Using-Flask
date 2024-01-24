@@ -1,0 +1,45 @@
+{% include 'admin-layout.html' %}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+  <!-- Page Heading -->
+  <h1 class="h3 mb-4 text-gray-800">Location History</h1>
+  <ul>
+    {% for item in data %}
+    <li class="item">
+      <h6><span class="head">Source: </span></h6>
+      <span class="content">{{ item.source }}</span>
+
+      <h6><span class="head">Destination: </span></h6>
+      <span class="content">{{ item.destination }}</span>
+
+      <h6><span class="head">Date: </span></h6>
+      <span class="content">{{ item.date }}</span>
+
+      <h6><span class="head">Time: </span></h6>
+      <span class="content">{{ item.time }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript-->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="static/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

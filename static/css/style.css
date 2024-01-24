@@ -1,0 +1,51 @@
+/* Add some basic styles for your container */
+.container {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Product Sans', sans-serif;
+}
+
+/* Style the label elements */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: 'Product Sans', sans-serif;
+}
+
+/* Style the select elements */
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: 'Product Sans', sans-serif;
+}
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Style the optgroup labels */
+optgroup {
+  font-weight: bold;
+  color: #007bff;
+  font-family: 'Product Sans', sans-serif;
+}
+
+/* Style the options */
+option {
+  color: #333;
+}
+
+/* Add some spacing between the containers */
+.container + .container {
+  margin-top: 20px;
+}
